@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2684800644410376024}
   - component: {fileID: 5249977571250714408}
   m_Layer: 0
-  m_Name: GameControl
-  m_TagString: Untagged
+  m_Name: GameManager
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -46,3 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   experience: 1200
+  score: 0
+  gold: 0
+  potions: 0
+  kills: 0
+  saveSceneIndex: 0

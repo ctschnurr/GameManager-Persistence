@@ -6,29 +6,62 @@ public class AdjustScript : MonoBehaviour
 {
     private void OnGUI()
     {
-        if(GUI.Button(new Rect(10, 100, 100, 30), "Health Up"))
+        if(GUI.Button(new Rect(10, 250, 100, 30), "Health Up"))
         {
-            GameControl.control.health += 10;
+            GameManager.control.health += 10;
         }
-        if (GUI.Button(new Rect(10, 140, 100, 30), "Health Down"))
+        if (GUI.Button(new Rect(120, 250, 100, 30), "Health Down"))
         {
-            GameControl.control.health -= 10;
+            GameManager.control.health -= 10;
         }
-        if (GUI.Button(new Rect(10, 180, 100, 30), "XP Up"))
+        if (GUI.Button(new Rect(10, 290, 100, 30), "XP Up"))
         {
-            GameControl.control.experience += 10;
+            GameManager.control.experience += 10;
         }
-        if (GUI.Button(new Rect(10, 220, 100, 30), "XP Down"))
+        if (GUI.Button(new Rect(120, 290, 100, 30), "XP Down"))
         {
-            GameControl.control.experience -= 10;
+            GameManager.control.experience -= 10;
         }
-        if (GUI.Button(new Rect(10, 260, 100, 30), "Save"))
+        if (GUI.Button(new Rect(10, 330, 100, 30), "Score Up"))
         {
-            GameControl.control.Save();
+            GameManager.control.score += 10;
         }
-        if (GUI.Button(new Rect(10, 300, 100, 30), "Load"))
+        if (GUI.Button(new Rect(120, 330, 100, 30), "Score Down"))
         {
-            GameControl.control.Load();
+            GameManager.control.score -= 10;
+        }
+        if (GUI.Button(new Rect(10, 370, 100, 30), "Gold Up"))
+        {
+            GameManager.control.gold += 1;
+        }
+        if (GUI.Button(new Rect(120, 370, 100, 30), "Gold Down"))
+        {
+            GameManager.control.gold -= 1;
+        }
+        if (GUI.Button(new Rect(10, 410, 100, 30), "Potions Up"))
+        {
+            GameManager.control.potions += 1;
+        }
+        if (GUI.Button(new Rect(120, 410, 100, 30), "Potions Down"))
+        {
+            GameManager.control.potions -= 1;
+        }
+        if (GUI.Button(new Rect(10, 450, 100, 30), "Kills Up"))
+        {
+            GameManager.control.kills += 1;
+        }
+        if (GUI.Button(new Rect(120, 450, 100, 30), "Kills Down"))
+        {
+            GameManager.control.kills -= 1;
+        }
+
+        if (GUI.Button(new Rect(10, 500, 100, 30), "Save"))
+        {
+            GameManager.control.Save();
+        }
+        if (GUI.Button(new Rect(120, 500, 100, 30), "Load"))
+        {
+            GameManager.control.Load();
         }
 
         // GUI.Label(new Rect(10, 10, 340, 30), "Scene: " + sceneNumber);
