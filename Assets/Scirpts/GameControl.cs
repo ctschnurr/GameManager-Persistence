@@ -23,6 +23,11 @@ public class GameControl : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (!File.Exists(Application.persistentDataPath + "/playerInfo.dat"))
+        {
+            FileStream file = File.Open(Application.persistentDataPath + "/playerInfo.dat", FileMode.Create);
+        }
     }
 
     private void OnGUI()
